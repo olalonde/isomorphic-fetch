@@ -2,5 +2,5 @@
 // on the global object (window or self)
 //
 // Return that as the export for use in Webpack, Browserify etc.
-require('whatwg-fetch');
+require('whatwg-fetch-expose-xhr');
 module.exports = self.fetch.bind(self);
